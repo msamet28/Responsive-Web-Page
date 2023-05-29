@@ -1,0 +1,252 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+.bodycolor {
+  background-color: rgb(248, 249, 250);
+}
+
+.hammenu {
+  display: none;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2228;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 40%;
+}
+
+.hammenulist {
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.hambutton {
+  display: none;
+  font-size: 55px;
+  border: 0;
+  background-color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  opacity: 0.95;
+  z-index: 1;
+  height: 95px;
+  padding-right: 20px;
+}
+
+.background {
+  background-image: url("/assets/image/bg1.png");
+  background-size: cover;
+  width: 100%;
+  height: 460px;
+}
+.paragraf {
+  color: rgb(96, 105, 123);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.circle {
+  width: 44px;
+  height: 44px;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: rgb(248, 249, 250);
+  border: 1px #605dba solid;
+}
+
+.firstbg {
+  height: 550px;
+  margin-bottom: 150px;
+  margin-top: 90px;
+}
+
+.pr130-pb50 {
+  padding-right: 130px;
+  padding-bottom: 50px;
+}
+
+.pl200-pr200 {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 30px;
+}
+
+.pr40 {
+  padding-right: 40px;
+}
+
+.pr60 {
+  padding-right: 60px;
+}
+
+.secondmatter {
+  text-align: center;
+  position: relative;
+  left: -4px;
+}
+
+.pl110 {
+  padding-left: 110px;
+}
+
+.communication {
+  padding-left: 110px;
+}
+.bottomsocial {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.pr35 {
+  padding-right: 35px;
+}
+
+.navmenu {
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#buton:hover {
+  position: relative;
+  bottom: 5px;
+  box-shadow: 0px 0px 20px black;
+}
+
+#social:hover {
+  position: relative;
+  bottom: 5px;
+}
+
+.up:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+@media (max-width: 992px) {
+  .navmenuinvisible {
+    display: none;
+  }
+
+  .hambutton {
+    display: inline;
+  }
+
+  .firstbg {
+    height: 850px;
+    margin-bottom: 250px;
+  }
+  .pr130-pb50 {
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .pl200-pr200 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .mt16 {
+    margin-top: 16px;
+  }
+
+  .mb100-pr30 {
+    height: 445px;
+    margin-bottom: 100px;
+    padding-right: 30px;
+  }
+  .none {
+    display: none;
+  }
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .pr40 {
+    padding: 10px;
+  }
+  .secondbg {
+    height: 520px;
+  }
+  .pr60 {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .cardsmargin {
+    margin-top: 20px;
+  }
+  .thirdphoto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .pl110 {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .communication {
+    padding-left: 225px;
+  }
+  .bottom {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .bottomsocial {
+    justify-content: center;
+  }
+  .pr35 {
+    padding: 0;
+  }
+  .navmenu {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstbg {
+    margin-bottom: 100px;
+  }
+  .secondbg {
+    height: 800px;
+  }
+  .communication {
+    padding-left: 110px;
+  }
+  .bottomemail {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>MSD</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+
+  <body class="bodycolor">
+    <!------------------------------------------------------------------------------------>
+
+    <div class="circle up">
+      <a href="#"
+        ><i
+          class="fa-solid fa-arrow-up upcolor"
+          style="color: rgb(252, 5, 169)"
+        ></i
+      ></a>
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+
+    <header class="navbar">
+      <div class="row" style="height: 100%; width: 100%">
+        <div
+          class="col-5 col-lg-2 d-flex justify-content-start align-items-center"
+        >
+          <a href="#"
+            ><img src="./assets/image/logo-dark.png" class="px-3"
+          /></a>
+        </div>
+
+        <div class="col-2 col-lg-8 navmenu">
+          <ul
+            class="nav navmenuinvisible"
+            style="justify-content: space-between; width: 100%"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: black; font-weight: bold"
+                >Demos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: black; font-weight: bold"
+                >Pages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: black; font-weight: bold"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: black; font-weight: bold"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: black; font-weight: bold"
+                >Blocks</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: black; font-weight: bold"
+                >Documentations</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-5 col-lg-2 d-flex align-items-center justify-content-end"
+        >
+          <a
+            id="social"
+            class="px-1"
+            href="https://twitter.com/home?lang=tr"
+            target="_blank"
+            ><img
+              src="./assets/image/Twitter-logo.svg.png"
+              style="height: 20px"
+          /></a>
+          <a
+            id="social"
+            class="px-1"
+            href="https://www.instagram.com/?hl=tr"
+            target="_blank"
+            ><img
+              src="./assets/image/Instagram_logo_2016.svg.webp"
+              style="height: 20px"
+          /></a>
+          <a
+            id="social"
+            class="px-1"
+            href="https://tr-tr.facebook.com/"
+            target="_blank"
+            ><img
+              src="./assets/image/Facebook_icon.svg.png"
+              style="height: 20px"
+          /></a>
+          <a
+            id="social"
+            class="px-1"
+            href="https://www.linkedin.com/feed/"
+            target="_blank"
+            ><img
+              src="./assets/image/1200px-Linkedin_icon.svg.png"
+              style="height: 20px"
+          /></a>
+          <button class="hambutton px-3" onclick="openhamburger()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!------------------------------------------------------------------------------------------>
+
+    <div class="hammenu" id="hamburgermenu">
+      <ul style="height: 100%; padding: 30px 0px">
+        <li style="text-align: end">
+          <button
+            onclick="quithamburger()"
+            style="
+              background-color: #1e2228;
+              border: none;
+              font-size: 30px;
+              padding: 1rem;
+            "
+          >
+            <i class="fa-solid fa-circle-xmark" style="color: white"></i>
+          </button>
+        </li>
+        <li class="hammenulist"><h1 style="font-weight: bold">Sandbox</h1></li>
+        <li><a href="#" class="hammenulist">Demos</a></li>
+        <li><a href="#" class="hammenulist">Pages</a></li>
+        <li><a href="#" class="hammenulist">Projects</a></li>
+        <li><a href="#" class="hammenulist">Blog</a></li>
+        <li><a href="#" class="hammenulist">Blocks</a></li>
+        <li><a href="#" class="hammenulist">Documentations</a></li>
+        <li class="hammenulist" style="padding-top: 50px">
+          first.last@email.com
+        </li>
+        <li class="hammenulist">00 (123) 456 78 90</li>
+      </ul>
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <div class="background firstbg">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 pr130-pb50">
+            <h1 style="font-weight: bold">
+              Networking
+              <span style="color: rgb(252, 5, 169)">solutions</span> for
+              worldwide communication
+            </h1>
+            <p
+              class="paragraf"
+              style="font-weight: bold; padding-top: 10px; margin-bottom: 35px"
+            >
+              We're a company that focuses on establishing long-term
+              relationships with customers.
+            </p>
+            <a href="#"
+              ><button
+                id="buton"
+                class="btn"
+                style="
+                  background-color: rgb(252, 5, 169);
+                  color: white;
+                  width: 155px;
+                  height: 60px;
+                  border: 0;
+                "
+              >
+                Explore Now
+              </button></a
+            >
+          </div>
+          <div class="col-lg-6" style="padding-top: 80px">
+            <img
+              src="./assets/image/3d6.png"
+              style="width: 100%; height: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------------------------------------------------------------->
+
+    <div class="container" style="margin-bottom: 100px">
+      <div class="row text-center pl200-pr200">
+        <h5 style="color: rgb(252, 5, 169); font-weight: bold">OUR FEATURES</h5>
+        <h1 style="font-weight: bold">
+          The service we offer is specifically designed to meet your needs.
+        </h1>
+      </div>
+
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row" style="margin-bottom: 80px">
+        <div class="col-md-6 col-lg-4 mt16">
+          <div class="d-flex flex-row">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256.02 213.34"
+                style="height: 45px"
+              >
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M162.66 106.34a8 8 0 01-6.06-13.2l11.54-13.47-11.54-13.45a8 8 0 1112.14-10.42l16 18.67a8 8 0 010 10.42l-16 18.67a8 8 0 01-6.08 2.78zm-69.31 0a8 8 0 01-6.08-2.78l-16-18.67a8 8 0 010-10.42l16-18.67a8 8 0 0112.15 10.42L87.88 79.67l11.54 13.46a8 8 0 01-6.07 13.21zm24.87 15.8a8 8 0 01-6-9.6l16-69.33a8 8 0 1115.6 3.6l-16 69.33a8 8 0 01-9.6 6z"
+                />
+                <path
+                  fill="#605dba"
+                  d="M237.33 0H18.67A18.76 18.76 0 000 18.67v144a18.76 18.76 0 0018.67 18.67h81.68c-1.25 5.35-4.57 14-13.45 22.9a5.33 5.33 0 003.77 9.1h74.67a5.33 5.33 0 003.78-9.1c-8.86-8.86-12.27-17.54-13.6-22.9h81.82A18.77 18.77 0 00256 162.67v-144A18.79 18.79 0 00237.33 0zm-2.66 138.67H21.33V21.34h213.33v117.33z"
+                />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <h5 style="font-weight: bold">Software & Integration</h5>
+              <p class="paragraf">
+                Duis mollis gravida commodo id luctus erat porttitor ligula,
+                eget lacinia odio sem aget elit nullam quis risus eget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt16">
+          <div class="d-flex flex-row">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="height: 45px"
+              >
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M186.67 117.33A69.34 69.34 0 10256 186.68a69.43 69.43 0 00-69.33-69.35zm37.34 55L186.68 215a10.65 10.65 0 01-7.68 3.63h-.35a10.67 10.67 0 01-7.53-3.12l-21.33-21.33a10.67 10.67 0 0115.09-15.09l13.26 13.27L208 158.3a10.67 10.67 0 1116 14.07z"
+                />
+                <path
+                  fill="#605dba"
+                  d="M177.92 32.32L92.58.32a5.88 5.88 0 00-3.84 0l-85.35 32a5.36 5.36 0 00-3.39 5v68.59c0 97.28 88.64 117.76 89.5 118a6.28 6.28 0 002.34 0 73.48 73.48 0 0010.77-3.41A89.34 89.34 0 0196 186.68a90.78 90.78 0 0185.34-90.56V37.35a5.38 5.38 0 00-3.42-5z"
+                />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <h5 style="font-weight: bold">Network Security</h5>
+              <p class="paragraf">
+                Duis mollis gravida commodo id luctus erat porttitor ligula,
+                eget lacinia odio sem aget elit nullam quis risus eget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt16">
+          <div class="d-flex flex-row">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256.03 256.02"
+                style="height: 45px"
+              >
+                <path
+                  fill="#605dba"
+                  d="M193.17 36.14C180.21 14.05 155.12 0 128 0 93.52 0 63.55 22.64 55.62 53.65c-25.27 2.75-44.95 23.09-44.95 47.68 0 26.46 22.79 48 50.79 48h123.6c33.24 0 60.28-25.52 60.28-56.9 0-28.67-22.57-52.62-52.17-56.29z"
+                />
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M245.34 208h-74.67v-8A18.69 18.69 0 00152 181.33h-13.33V144a10.67 10.67 0 10-21.34 0v37.33H104A18.69 18.69 0 0085.33 200v8H10.66a10.67 10.67 0 000 21.34h74.68v8A18.7 18.7 0 00104 256h48a18.7 18.7 0 0018.67-18.68v-8h74.67a10.67 10.67 0 100-21.34z"
+                />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <h5 style="font-weight: bold">Cloud Services</h5>
+              <p class="paragraf">
+                Duis mollis gravida commodo id luctus erat porttitor ligula,
+                eget lacinia odio sem aget elit nullam quis risus eget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="d-flex flex-row">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="height: 45px"
+              >
+                <path
+                  fill="#605dba"
+                  d="M163.78 19.12A42.63 42.63 0 00128 0c-18.54 0-34.77 11.81-40.14 28.34C74.26 31 64 42.66 64 56.53c0 15.89 13.42 28.8 29.92 28.8h63.3c19.18 0 34.78-15 34.78-33.43 0-16.22-12.08-29.87-28.22-32.78z"
+                />
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M224 168a8 8 0 01-8-8v-16H40v16a8 8 0 01-16 0v-24a8 8 0 018-8h192a8 8 0 018 8v24a8 8 0 01-8 8z"
+                />
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M128 170.67a8 8 0 01-8-8v-48a8 8 0 0116 0v48a8 8 0 01-8 8z"
+                />
+                <circle fill="#605dba" cx="32" cy="197.33" r="16" />
+                <path
+                  fill="#605dba"
+                  d="M40 224H24a24 24 0 00-24 24 8 8 0 008 8h48a8 8 0 008-8 24 24 0 00-24-24z"
+                />
+                <circle fill="#605dba" cx="128" cy="197.33" r="16" />
+                <path
+                  fill="#605dba"
+                  d="M136 224h-16a24 24 0 00-24 24 8 8 0 008 8h48a8 8 0 008-8 24 24 0 00-24-24z"
+                />
+                <circle fill="#605dba" cx="224" cy="197.33" r="16" />
+                <path
+                  fill="#605dba"
+                  d="M232 224h-16a24 24 0 00-24 24 8 8 0 008 8h48a8 8 0 008-8 24 24 0 00-24-24z"
+                />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <h5 style="font-weight: bold">Wireless Networking</h5>
+              <p class="paragraf">
+                Duis mollis gravida commodo id luctus erat porttitor ligula,
+                eget lacinia odio sem aget elit nullam quis risus eget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="d-flex flex-row">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 213.34"
+                style="height: 45px"
+              >
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M177.81 73.28c.11-1.28.21-2.56.21-4s-.12-2.67-.21-4l8.85-6.52a13.19 13.19 0 003.63-17.07l-7.89-13.98a12.76 12.76 0 00-16.64-5.44L156 26.86a51.33 51.33 0 00-6.08-3.63l-1.12-11.39A13 13 0 00135.89 0H120.1a13 13 0 00-12.92 11.84l-1.07 11.41a51.33 51.33 0 00-6.11 3.63l-9.81-4.59a12.86 12.86 0 00-16.64 5.44L65.7 41.81a13.12 13.12 0 003.63 17.07l8.85 6.51c-.12 1.28-.21 2.56-.21 4s.11 2.68.21 4l-8.85 6.51a13.12 13.12 0 00-3.62 17l7.89 14.08a12.84 12.84 0 0016.64 5.44l9.81-4.59a51.33 51.33 0 006.08 3.63l1.07 11.41a13 13 0 0012.91 11.84h15.79a13 13 0 0012.92-11.84l1.07-11.41a51.33 51.33 0 006.08-3.63l9.81 4.59a12.76 12.76 0 0016.64-5.44l7.88-14.08a13.12 13.12 0 00-3.63-17.07zm-23.14-3.94A26.67 26.67 0 11128 42.67a26.69 26.69 0 0126.67 26.67z"
+                />
+                <path
+                  fill="#605dba"
+                  d="M224 149.34H32a32 32 0 000 64h192a32 32 0 000-64zM42.67 192a10.67 10.67 0 1110.67-10.66A10.67 10.67 0 0142.67 192zM96 192a10.67 10.67 0 1110.67-10.66A10.67 10.67 0 0196 192zm64 0a10.67 10.67 0 1110.67-10.66A10.67 10.67 0 01160 192zm53.33 0A10.67 10.67 0 11224 181.34 10.67 10.67 0 01213.33 192z"
+                />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <h5 style="font-weight: bold">IT Solutions</h5>
+              <p class="paragraf">
+                Duis mollis gravida commodo id luctus erat porttitor ligula,
+                eget lacinia odio sem aget elit nullam quis risus eget.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="d-flex flex-row">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                style="height: 45px"
+              >
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M250.58 126.14l-56-19a8 8 0 00-5.16 0l-56 19a8 8 0 00-5.42 7.57v42.87c0 52.32 58.38 77.72 60.88 78.8a8.19 8.19 0 003.12.62 7.85 7.85 0 003.12-.64c2.5-1.06 60.88-26.48 60.88-78.78v-42.87a8 8 0 00-5.42-7.57zm-23.52 40.45l-29.33 37.33a10.66 10.66 0 01-15.33 1.5l-18.67-16a10.66 10.66 0 0113.87-16.19l10.22 8.77 22.47-28.57a10.66 10.66 0 0116.77 13.18z"
+                />
+                <path
+                  fill="#605dba"
+                  d="M202.67 0H32a32 32 0 000 64h170.67a32 32 0 000-64zM32 42.67A10.67 10.67 0 1142.67 32 10.67 10.67 0 0132 42.67zm42.67 0A10.67 10.67 0 1185.34 32a10.67 10.67 0 01-10.67 10.67zM32 85.33a32 32 0 000 64h74.67v-15.57a29.38 29.38 0 0120-27.84l55.89-19a29 29 0 019.49-1.6zM32 128a10.67 10.67 0 1110.67-10.67A10.7 10.7 0 0132 128zm42.67 0a10.67 10.67 0 1110.67-10.67A10.7 10.7 0 0174.67 128zm32 48.53v-5.87H32a32 32 0 000 64h95.68c-12.27-15.57-21.01-35.09-21.01-58.13zM32 213.33a10.67 10.67 0 1110.67-10.66A10.7 10.7 0 0132 213.33zm42.67 0a10.67 10.67 0 1110.67-10.66 10.7 10.7 0 01-10.67 10.66z"
+                />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <h5 style="font-weight: bold">Server Configuration</h5>
+              <p class="paragraf">
+                Duis mollis gravida commodo id luctus erat porttitor ligula,
+                eget lacinia odio sem aget elit nullam quis risus eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row" style="margin-bottom: 100px">
+        <div class="col-lg-6 mb100-pr30">
+          <img
+            src="./assets/image/3d2.png"
+            style="width: 100%; height: 615px"
+          />
+        </div>
+
+        <div class="col-lg-6" style="padding-top: 100px; padding-left: 20px">
+          <h5
+            style="
+              color: rgb(252, 5, 169);
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            HAVE PERFECT CONTROL
+          </h5>
+          <h1 style="font-weight: bold; margin-top: 15px; text-align: center">
+            We bring solutions to make life easier for our customers.
+          </h1>
+          <p style="margin-top: 20px; text-align: center">
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Praesent commodo cursus magna, vel scelerisque
+            nisl consectetur et. Vivamus sagittis lacus vel augue rutrum.
+          </p>
+          <div class="d-flex flex-row">
+            <div style="margin-top: 10px; margin-right: 15px">
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span class="paragraf"
+                >Aenean quam ornare. Curabitur blandit.</span
+              >
+              <br />
+              <span style="display: inline-block; margin-top: 10px"
+                ><i class="fa-solid fa-circle-check"></i
+              ></span>
+              <span class="paragraf"
+                >Nullam quis risus eget urna mollis ornare.</span
+              >
+            </div>
+            <div style="margin-top: 10px">
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span class="paragraf"
+                >Etiam porta euismod malesuada mollis.</span
+              >
+              <br />
+              <span style="display: inline-block; margin-top: 10px"
+                ><i class="fa-solid fa-circle-check"></i
+              ></span>
+              <span class="paragraf"
+                >Vivamus sagittis lacus vel augue rutrum.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row">
+        <div class="col-lg-6 pr40" style="position: relative">
+          <img
+            class="rounded"
+            src="./assets/image/about27.jpg"
+            style="width: 100%"
+          />
+          <div
+            class="card shadow-lg none"
+            style="
+              background-color: white;
+              width: 190px;
+              height: 100px;
+              position: absolute;
+              top: 30%;
+              left: -7%;
+              align-items: center;
+              justify-content: center;
+              border: 0;
+            "
+          >
+            <div class="d-flex flex-row">
+              <div
+                style="display: flex; align-items: center; margin-right: 10px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 234.66"
+                  style="width: 44px"
+                >
+                  <circle
+                    fill="rgb(252, 5, 169)"
+                    cx="128"
+                    cy="149.33"
+                    r="21.33"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M162.67 234.66H93.34a8 8 0 01-8-8v-16a29.36 29.36 0 0129.33-29.33h26.67a29.35 29.35 0 0129.33 29.33v16a8 8 0 01-8 8zm32-64h-14.19a55.46 55.46 0 0116.85 40v2.67H216a8.06 8.06 0 008-8V200a29.32 29.32 0 00-29.33-29.34zm-133.34 0A29.31 29.31 0 0032 200v5.35a8.06 8.06 0 008 8h18.67v-2.67a55.46 55.46 0 0116.85-40z"
+                  />
+                  <circle
+                    fill="rgb(252, 5, 169)"
+                    cx="74.67"
+                    cy="138.66"
+                    r="21.33"
+                  />
+                  <circle
+                    fill="rgb(252, 5, 169)"
+                    cx="181.33"
+                    cy="138.66"
+                    r="21.33"
+                  />
+                  <path
+                    fill="#605dba"
+                    d="M27.2 162.94a52.21 52.21 0 018.8-6.56A42.48 42.48 0 01107.73 112a41 41 0 0140.54 0A42.48 42.48 0 01220 156.38a55.09 55.09 0 015.83 4 64.4 64.4 0 00-26.65-118.49A81.31 81.31 0 00128 0C90.19 0 57.39 26.3 49.1 62.18 21.54 65.07 0 88.22 0 116.26c0 19.93 11 37.21 27.2 46.68z"
+                  />
+                </svg>
+              </div>
+              <div style="padding-top: 10px">
+                <h3 style="font-weight: bold; margin-bottom: 0">25000+</h3>
+                <p style="margin-top: 0" class="paragraf">Happy Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-50">
+          <h5
+            style="
+              color: rgb(252, 5, 169);
+              font-weight: bold;
+              margin-bottom: 15px;
+              text-align: center;
+            "
+          >
+            WHAT MAKES US DIFFERENT?
+          </h5>
+          <h1
+            style="font-weight: bold; margin-bottom: 20px; text-align: center"
+          >
+            We make spending stress free so you have the perfect control.
+          </h1>
+          <p class="paragraf" style="text-align: center">
+            Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper
+            nulla non metus auctor fringilla. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus.
+            Integer posuere erat a ante venenatis dapibus posuere velit.
+          </p>
+          <p class="paragraf" style="text-align: center">
+            <i class="fa-solid fa-circle-check" style="color: black"></i>Aenean
+            eu leo quam. Pellentesque ornare.
+          </p>
+          <p class="paragraf secondmatter">
+            <i class="fa-solid fa-circle-check" style="color: black"></i>Nullam
+            quis risus eget urna mollis ornare.
+          </p>
+          <p class="paragraf" style="text-align: center">
+            <i class="fa-solid fa-circle-check" style="color: black"></i>Donec
+            id elit non mi porta gravida at eget
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------->
+
+    <div class="background secondbg" style="margin-top: 150px">
+      <div class="container">
+        <div class="row" style="padding-top: 60px">
+          <div class="col-lg-4 pr60">
+            <h1 class="d-flex justify-content-center" style="font-weight: bold">
+              We are proud of our works
+            </h1>
+            <p
+              class="paragraf d-flex justify-content-center"
+              style="margin-top: 15px; font-weight: bold"
+            >
+              We bring solutions to make life easier for our customers.
+            </p>
+          </div>
+
+          <div class="col-lg-8" style="padding-left: 50px">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256.1 256.01"
+                  style="height: 44px"
+                >
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M178.66 79.37L166.93 91.1a76.68 76.68 0 014.91 11.52 85.77 85.77 0 0114.93-1.28h1.39a93.65 93.65 0 00-9.5-21.97zM0 128a96.1 96.1 0 00109.65 95 82.93 82.93 0 01-5.65-15.42 67 67 0 01-8 .43A80 80 0 0196 48a79 79 0 0137 9.17l11.73-11.73A94.73 94.73 0 0096 32a96.14 96.14 0 00-96 96z"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M37.33 128A58.78 58.78 0 0096 186.68a47.26 47.26 0 005.44-.32A82.71 82.71 0 01103 170a37.32 37.32 0 01-7 .64 42.67 42.67 0 010-85.34 32.88 32.88 0 018 .84l12.91-12.91a57 57 0 00-20.91-4A58.81 58.81 0 0037.33 128z"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M96 106.68A21.33 21.33 0 10117.33 128 21.39 21.39 0 0096 106.68zm0 26.66a5.33 5.33 0 115.33-5.33 5.28 5.28 0 01-5.33 5.33z"
+                  />
+                  <path
+                    fill="#605dba"
+                    d="M96.1 136a8 8 0 01-5.67-13.65L159.76 53a8 8 0 0111.31 11.31l-69.33 69.33A8 8 0 0196.1 136z"
+                  />
+                  <path
+                    fill="#605dba"
+                    d="M194.77 64H168.1a8 8 0 01-8-8V29.34a8.08 8.08 0 012.33-5.67l21.33-21.33A8 8 0 01197.42 8v18.68h18.68a8 8 0 015.66 13.66l-21.33 21.33a8 8 0 01-5.66 2.33zm-8 53.34a69.34 69.34 0 1069.33 69.34 69.4 69.4 0 00-69.33-69.34zm29.87 56.11L182 210.78a8 8 0 01-11.09.64l-18.67-16a8 8 0 1110.41-12.15l12.84 11 29.44-31.69a8 8 0 0111.74 10.88z"
+                  />
+                </svg>
+                <h1 style="font-weight: bold">1000+</h1>
+                <p class="paragraf" style="font-weight: bold">
+                  Completed Projects
+                </p>
+              </div>
+              <div class="col-md-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 245.34"
+                  style="height: 44px"
+                >
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M32 106.67A10.67 10.67 0 0124.91 88l48-42.67a10.62 10.62 0 018.37-2.61l83 10.07 47-44.56A10.66 10.66 0 01226 23.74l-50.67 48a10.73 10.73 0 01-8.61 2.85L83.49 64.5 39.09 104a10.61 10.61 0 01-7.09 2.7z"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M226.67 53.34A8 8 0 01221 51l-37.32-37.34A8 8 0 01189.33 0h37.33a8 8 0 018 8v37.33a8 8 0 01-4.95 7.39 7.66 7.66 0 01-3.04.62z"
+                  />
+                  <path
+                    fill="#605dba"
+                    d="M74.67 184v29.33h-64V184A13.33 13.33 0 0124 170.67h37.33A13.34 13.34 0 0174.67 184zM160 120v93.33H96V120a13.33 13.33 0 0113.33-13.33h37.33A13.33 13.33 0 01160 120zm85.33 21.34v72h-64v-72A13.32 13.32 0 01194.66 128H232a13.31 13.31 0 0113.33 13.34z"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M248 245.34H8a8 8 0 010-16h240a8 8 0 010 16z"
+                  />
+                </svg>
+                <h1 style="font-weight: bold">4x</h1>
+                <p class="paragraf" style="font-weight: bold">Revenue Growth</p>
+              </div>
+              <div class="col-md-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 256"
+                  style="height: 44px"
+                >
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M72.11 86.51l-3.52-21 1.41-1.4-4.36-4.48a24.12 24.12 0 01-5.78-24.43c.11-.32.2-.53.32-.85l-1.4-.21-9-18.88a8 8 0 00-14.49 0l-8.88 19-19.69 3.07a8 8 0 00-6.29 5.44 7.94 7.94 0 001.92 8.11l14.51 14.83-3.42 21A8.07 8.07 0 0021.33 96a8.33 8.33 0 004-1l17.49-9.81 17.6 9.6a8.2 8.2 0 008.53-.43 8 8 0 003.21-7.89zm183.46-44.06a7.85 7.85 0 00-6.4-5.33l-19.73-3-9-18.88a8 8 0 00-14.5 0l-8.86 19-1.17.21c0 .11.11.21.11.32a23.76 23.76 0 01-5.44 24.32L185.81 64l1.71 1.71-3.41 21A8.07 8.07 0 00192 96a8.33 8.33 0 004-1l17.49-9.81 17.6 9.6a8.2 8.2 0 008.53-.43 8.06 8.06 0 003.2-7.89l-3.52-21 14.51-14.92a8.09 8.09 0 001.81-8.13z"
+                  />
+                  <path
+                    fill="#605dba"
+                    d="M100.18 106.67a8 8 0 01-7.91-9.25l4.61-28.8L77 48.37a8 8 0 014.46-13.51l27.09-4.22 12.11-26a8 8 0 017.2-4.64 8 8 0 017.23 4.58l12.29 25.9 27.12 4.05A8 8 0 01179.09 48l-19.78 20.38 4.8 28.77a8 8 0 01-11.74 8.34l-24.19-13.25-24.12 13.42a7.94 7.94 0 01-3.88 1z"
+                  />
+                  <circle
+                    fill="rgb(252, 5, 169)"
+                    cx="42.67"
+                    cy="160"
+                    r="21.33"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M71.15 196.27A44.71 44.71 0 0053.34 232v2.67H8a8.06 8.06 0 01-8-8v-5.33A29.32 29.32 0 0129.33 192H56a29.13 29.13 0 0115.15 4.27z"
+                  />
+                  <circle
+                    fill="rgb(252, 5, 169)"
+                    cx="213.33"
+                    cy="160"
+                    r="21.33"
+                  />
+                  <path
+                    fill="rgb(252, 5, 169)"
+                    d="M256 221.33v5.33a8.07 8.07 0 01-8 8h-45.33V232a44.69 44.69 0 00-17.81-35.73A29.07 29.07 0 01200 192h26.67A29.32 29.32 0 01256 221.33z"
+                  />
+                  <circle fill="#605dba" cx="128" cy="154.67" r="32" />
+                  <path
+                    fill="#605dba"
+                    d="M157.33 202.67H98.66A29.35 29.35 0 0069.33 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16a29.35 29.35 0 00-29.33-29.33z"
+                  />
+                </svg>
+                <h1 style="font-weight: bold">99.7%</h1>
+                <p class="paragraf" style="font-weight: bold">
+                  Customer Satisfaction
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <div class="container" style="margin-top: -200px; margin-bottom: 180px">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 cardsmargin">
+          <div
+            class="card shadow-lg"
+            style="border-bottom: rgb(207, 206, 234) 6px solid"
+          >
+            <div
+              class="card-body"
+              style="
+                padding-left: 30px;
+                padding-bottom: 10px;
+                padding-top: 20px;
+              "
+            >
+              <p class="paragraf">
+                “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                expedita unde, dicta aspernatur doloribus praesentium sequi
+                velit ad corporis quo. Veniam inventore magnam commodi enim
+                fugiat sint sapiente!”
+              </p>
+              <h5>Coriss Ambady</h5>
+              <p class="paragraf">Financial Analyst</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 cardsmargin">
+          <div
+            class="card shadow-lg"
+            style="border-bottom: rgb(207, 206, 234) 6px solid"
+          >
+            <div
+              class="card-body"
+              style="
+                padding-left: 30px;
+                padding-bottom: 10px;
+                padding-top: 20px;
+              "
+            >
+              <p class="paragraf">
+                “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                expedita unde, dicta aspernatur doloribus praesentium sequi
+                velit ad corporis quo. Veniam inventore magnam commodi enim
+                fugiat sint sapiente!”
+              </p>
+              <h5>Cory Zamora</h5>
+              <p class="paragraf">Marketing Specialist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 cardsmargin">
+          <div
+            class="card shadow-lg"
+            style="border-bottom: rgb(207, 206, 234) 6px solid"
+          >
+            <div
+              class="card-body"
+              style="
+                padding-left: 30px;
+                padding-bottom: 10px;
+                padding-top: 20px;
+              "
+            >
+              <p class="paragraf">
+                “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                expedita unde, dicta aspernatur doloribus praesentium sequi
+                velit ad corporis quo. Veniam inventore magnam commodi enim
+                fugiat sint sapiente!”
+              </p>
+              <h5>Nikolas Brooten</h5>
+              <p class="paragraf">Sales Manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 cardsmargin">
+          <div
+            class="card shadow-lg"
+            style="border-bottom: rgb(207, 206, 234) 6px solid"
+          >
+            <div
+              class="card-body"
+              style="
+                padding-left: 30px;
+                padding-bottom: 10px;
+                padding-top: 20px;
+              "
+            >
+              <p class="paragraf">
+                “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                expedita unde, dicta aspernatur doloribus praesentium sequi
+                velit ad corporis quo. Veniam inventore magnam commodi enim
+                fugiat sint sapiente!”
+              </p>
+              <h5>Coriss Ambady</h5>
+              <p class="paragraf">Financial Analyst</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------>
+
+    <div class="container" style="margin-bottom: 180px">
+      <div class="row">
+        <div class="col-lg-6 pr35">
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="rounded none"
+                src="./assets/image/1.jpg"
+                style="max-width: 100%; position: relative; bottom: 20px"
+              />
+            </div>
+            <div class="col-lg-6 none">
+              <img
+                class="rounded"
+                src="./assets/image/2.jpg"
+                style="max-width: 100%"
+              />
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center thirdphoto">
+              <img
+                class="rounded"
+                src="./assets/image/3.jpg"
+                style="width: 90%"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" style="padding-left: 35px">
+          <h5
+            class="paragraf"
+            style="
+              color: rgb(252, 5, 169);
+              margin-bottom: 30px;
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            WHO ARE WE?
+          </h5>
+          <h1
+            style="font-weight: bold; margin-bottom: 30px; text-align: center"
+          >
+            Company that believes in the power of creative strategy.
+          </h1>
+          <p class="paragraf" style="text-align: center">
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Praesent commodo cursus magna, vel scelerisque
+            nisl consectetur et. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+            nulla sed.
+          </p>
+          <div class="d-flex flex-row">
+            <div>
+              <p class="paragraf">
+                <i class="fa-solid fa-circle-check" style="color: black"></i>
+                Aenean eu leo quam ornare curabitur blandit euismod.
+              </p>
+              <p class="paragraf">
+                <i class="fa-solid fa-circle-check" style="color: black"></i>
+                Nullam quis risus eget urna mollis ornare donec.
+              </p>
+            </div>
+            <div>
+              <p class="paragraf">
+                <i class="fa-solid fa-circle-check" style="color: black"></i>
+                Etiam porta sem malesuada magna mollis euismod.
+              </p>
+              <p class="paragraf">
+                <i class="fa-solid fa-circle-check" style="color: black"></i>
+                Fermentum massa vivamus faucibus amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 65px">
+        <div class="col-lg-4">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="circle">1</div>
+            </div>
+            <div style="margin-left: 20px">
+              <h5 style="font-weight: bold">Our Vision</h5>
+              <p class="paragraf" style="margin-top: 15px">
+                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+                porta gravida at eget. Fusce dapibus tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="circle">2</div>
+            </div>
+            <div style="margin-left: 20px">
+              <h5 style="font-weight: bold">Our Mission</h5>
+              <p class="paragraf" style="margin-top: 15px">
+                Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel
+                augue laoreet. Sed posuere consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="circle">3</div>
+            </div>
+            <div style="margin-left: 20px">
+              <h5 style="font-weight: bold">Our Values</h5>
+              <p class="paragraf" style="margin-top: 15px">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Praesent commodo cursus magna scelerisque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------->
+
+    <div class="container" style="margin-bottom: 180px">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="./assets/image/3d3.png" style="width: 100%; height: auto" />
+        </div>
+        <div class="col-lg-6">
+          <h5
+            class="pl110"
+            style="
+              color: rgb(252, 5, 169);
+              font-weight: bold;
+              margin-bottom: 30px;
+            "
+          >
+            CONTACT US
+          </h5>
+          <h1 class="pl110" style="font-weight: bold; margin-bottom: 50px">
+            Got any questions? Don't hesitate to get in touch.
+          </h1>
+
+          <div
+            class="d-flex flex-row communication"
+            style="margin-bottom: 25px"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 255.84"
+                style="width: 35px; height: 35px"
+              >
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M10.67 255.84a10.68 10.68 0 01-7.54-18.23l86.08-86a10.67 10.67 0 1115.08 15.1l-86.08 86a10.61 10.61 0 01-7.54 3.13z"
+                />
+                <path
+                  fill="#605dba"
+                  d="M250.54 80.72L175.12 5.29a19.12 19.12 0 00-26.4 0L138.3 15.71a27.18 27.18 0 00-6.61 27.93A11.25 11.25 0 01129 55.21L98.38 85.79a13.3 13.3 0 01-9.38 3.9H76.46a29.11 29.11 0 00-20.73 8.59l-5.06 5.06a18.66 18.66 0 000 26.4l75.42 75.42a18.64 18.64 0 0026.4 0l5.06-5.07a29.12 29.12 0 008.59-20.73v-12.5a13.43 13.43 0 013.91-9.42l30.57-30.58a11.24 11.24 0 0111.57-2.74 27.14 27.14 0 0027.92-6.6l10.42-10.42a18.65 18.65 0 000-26.38z"
+                />
+              </svg>
+            </div>
+            <div style="margin-left: 20px">
+              <h5 style="font-weight: bold">Address</h5>
+              <p class="paragraf">Moonshine St. 14/05 Light City, London</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row communication"
+            style="margin-bottom: 25px"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256.01 256"
+                style="width: 35px; height: 35px"
+              >
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M128 106.67a128.15 128.15 0 00-128 128A21.36 21.36 0 0021.34 256h213.32A21.36 21.36 0 00256 234.67c0-70.57-57.42-128-128-128zM128 224a42.67 42.67 0 1142.67-42.67A42.71 42.71 0 01128 224z"
+                />
+                <path
+                  fill="#605dba"
+                  d="M33.45 117.34a22.89 22.89 0 01-12.56-3.69 50.7 50.7 0 01-6.61-5.12A43.84 43.84 0 01.74 68.3C5.45 43.31 33.27 27.06 53.8 17A169.32 169.32 0 01128 0c34.77 0 69.86 10.62 96.26 29.14 11.95 8.4 26.22 20.11 30.4 36.41a44 44 0 01-12.93 43 49.9 49.9 0 01-6.49 5 23.84 23.84 0 01-26.87-.76L171.1 86.18c-8.32-5.94-11.64-16.42-8.08-25.52.19-.53.41-1 .64-1.56a113 113 0 00-71.33 0l.67 1.54c3.57 9.1.22 19.6-8.08 25.52l-37.3 26.61a24.15 24.15 0 01-14.14 4.57z"
+                />
+              </svg>
+            </div>
+            <div style="margin-left: 20px">
+              <h5 style="font-weight: bold">Phone</h5>
+              <p class="paragraf">00 (123) 456 78 90</p>
+            </div>
+          </div>
+          <div class="d-flex flex-row communication">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 202.66"
+                style="width: 35px; height: 35px"
+              >
+                <path
+                  fill="#605dba"
+                  d="M192 0H21.33A21.36 21.36 0 000 21.33v96a21.36 21.36 0 0021.33 21.33H192a21.36 21.36 0 0021.33-21.33v-96A21.36 21.36 0 00192 0zm0 48l-73.6 37.12A25.12 25.12 0 01106.67 88a24.39 24.39 0 01-11.84-3L21.34 48V30.08l80.85 40.75a9.64 9.64 0 008.85.11l81-40.86z"
+                />
+                <path
+                  fill="rgb(252, 5, 169)"
+                  d="M234.67 64v53.33A42.72 42.72 0 01192 160H42.67v21.33A21.36 21.36 0 0064 202.66h170.67A21.36 21.36 0 00256 181.33v-96A21.36 21.36 0 00234.67 64z"
+                />
+              </svg>
+            </div>
+            <div style="margin-left: 20px">
+              <h5 style="font-weight: bold">E-mail</h5>
+              <p class="paragraf">sandbox@email.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------->
+
+    <div
+      class="background d-flex align-items-center"
+      style="margin-bottom: 125px; height: 410px"
+    >
+      <div class="container" style="text-align: center">
+        <h5
+          style="
+            font-weight: bold;
+            color: rgb(252, 5, 169);
+            margin-bottom: 30px;
+          "
+        >
+          JOIN OUR COMMUNITY
+        </h5>
+        <h1 style="font-weight: bold; margin-bottom: 30px">
+          We are trusted by over 5000+ clients. Join them now and grow your
+          business.
+        </h1>
+        <a href="#">
+          <button
+            id="buton"
+            class="btn"
+            style="
+              background-color: rgb(252, 5, 169);
+              color: white;
+              width: 200px;
+              height: 60px;
+              border: 0;
+            "
+          >
+            Get Started
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------->
+
+    <div class="container" style="margin-bottom: 50px">
+      <div class="row">
+        <div class="col-md-12 col-lg-3 bottom">
+          <a href="#"><img src="/assets/image/logo-dark.png" /></a>
+          <p
+            class="paragraf"
+            style="font-weight: bold; margin-top: 30px; margin-bottom: 15px"
+          >
+            © 2022 Sandbox.<br />All rights reserved.
+          </p>
+          <div class="bottomsocial">
+            <a
+              id="social"
+              href="https://twitter.com/home?lang=tr"
+              target="_blank"
+              ><img
+                src="./assets/image/Twitter-logo.svg.png"
+                style="height: 20px; padding-right: 10px"
+            /></a>
+            <a id="social" href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="./assets/image/Instagram_logo_2016.svg.webp"
+                style="height: 20px; padding-right: 10px"
+            /></a>
+            <a id="social" href="https://tr-tr.facebook.com/" target="_blank"
+              ><img
+                src="./assets/image/Facebook_icon.svg.png"
+                style="height: 20px; padding-right: 10px"
+            /></a>
+            <a id="social" href="https://www.linkedin.com/feed/" target="_blank"
+              ><img
+                src="./assets/image/1200px-Linkedin_icon.svg.png"
+                style="height: 20px"
+            /></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 bottom">
+          <h5 style="font-weight: bold; margin-bottom: 15px">Get in Touch</h5>
+          <p class="paragraf">
+            Moonshine St. 14/05 <br />
+            Light City, London,<br />
+            United Kingdom
+          </p>
+          <p class="paragraf">
+            info@email.com <br />
+            00 (123) 456 78 90
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 bottom">
+          <h5 style="font-weight: bold; margin-bottom: 15px">Learn More</h5>
+          <a class="nav-link paragraf" href="#" style="margin-bottom: 7px"
+            >About Us</a
+          >
+          <a class="nav-link paragraf" href="#" style="margin-bottom: 7px"
+            >Our Story</a
+          >
+          <a class="nav-link paragraf" href="#" style="margin-bottom: 7px"
+            >Projects</a
+          >
+          <a class="nav-link paragraf" href="#" style="margin-bottom: 7px"
+            >Terms of Use</a
+          >
+          <a class="nav-link paragraf" href="#">Privacy Policy</a>
+        </div>
+        <div class="col-md-4 col-lg-3 bottom bottomemail">
+          <h5 style="font-weight: bold; margin-bottom: 15px">Our Newsletter</h5>
+          <p class="paragraf">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+          <div class="d-flex form-group shadow-lg" style="margin-top: 20px">
+            <input type="email" style="height: 40px; border: 0" />
+
+            <a href="#" style="width: 100%"
+              ><button
+                style="
+                  border: 0;
+                  border-top-right-radius: 5px;
+                  border-bottom-right-radius: 5px;
+                  background-color: rgb(252, 5, 169);
+                  color: white;
+                  height: 40px;
+                  width: 100%;
+                "
+              >
+                Join
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
